@@ -6,14 +6,16 @@
       <th>Detalle</th>
       <th>% Descuento</th>
       <th>Fecha de caducidad</th>
+      <th>Opciones</th>
     </thead>
     <tbody>
       <tr *ngFor="let oferta of ofertas; let i = index;">
         <td>{{oferta.titulo}}</td>
         <td>{{oferta.detalle}}</td>
-        <td>{{oferta.descuento}}</td>
-        <td>{{oferta.caducidad}}</td>
-        <td><a routerLink="/owners/{{i}}" routerLinkActive="active">Detalles</a></td>
+        <td>{{oferta.descuento}} %</td>
+        <td>{{oferta.fechaCaducidad}}</td>
+        <td class="text-center"><button class="btn btn-info mr-2" (click)="modificar(oferta.id)">Editar</button>
+          <button class="btn btn-danger" (click)="eliminar(oferta.id)">Eliminar</button></td>
       </tr>
     </tbody>
   </table>

@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Oferta } from '../oferta';
+import { ListarServiceService } from '../listar-service.service';
 
 @Component({
   selector: 'app-alta',
@@ -7,9 +9,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AltaComponent implements OnInit {
 
-  constructor() { }
+  public oferta:Oferta;
+
+  constructor(
+    private servicio:ListarServiceService
+  ) {
+    this.oferta=<Oferta>{};
+  }
 
   ngOnInit() {
+  }
+
+  onSubmit(oferta){
+    //this.servicio.addOferta(oferta);
+    console.log(oferta);
   }
 
 }

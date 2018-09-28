@@ -1,0 +1,44 @@
+[
+  {
+  "id": 1,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  },
+  {
+  "id": 2,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  },
+  {
+  "id": 3,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  },
+  {
+  "id": 4,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  },
+  {
+  "id": 5,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  },
+  {
+  "id": 6,
+  "titulo": "Prueba",
+  "detalle": "Detalles de prueba",
+  "descuento": "21",
+  "caducidad": "2918-18-17"
+  }
+  ]

@@ -8,6 +8,7 @@ import { AltaComponent } from './alta/alta.component';
 import { ModificarComponent } from './modificar/modificar.component';
 import { EliminarComponent } from './eliminar/eliminar.component';
 import { ListarComponent } from './listar/listar.component';
+import { ListarServiceService } from './listar-service.service';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,7 @@ import { ListarComponent } from './listar/listar.component';
     FormsModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ListarServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

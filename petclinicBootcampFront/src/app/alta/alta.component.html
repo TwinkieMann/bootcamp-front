@@ -1,3 +1,13 @@
-<p>
-  alta works!
-</p>
+<h3 class="text-center mb-5">Nueva oferta</h3>
+
+<form #ofertaForm="ngForm" (ngSubmit)=onSubmit(ofertaForm.value)>
+<input type="text" class="form-control mb-3" placeholder="Título" required [(ngModel)]="oferta.titulo" #nombre="ngModel"
+name="titulo">
+<input type="text" class="form-control mb-3" placeholder="Detalle" required [(ngModel)]="oferta.detalle" #apellidos="ngModel"
+name="detalle">
+<input type="text" class="form-control mb-3" placeholder="% Descuento" required [(ngModel)]="oferta.descuento" #email="ngModel"
+name="descuento">
+<input type="text" class="form-control mb-5" placeholder="Fecha de caducidad" required [(ngModel)]="oferta.fechaCaducidad"
+#email="ngModel" name="fechaCaducidad">
+<button class="w-100 btn btn-success" [disabled]="!ofertaForm.valid" type="submit">Añadir</button>
+</form>
